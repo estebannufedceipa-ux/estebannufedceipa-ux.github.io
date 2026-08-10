@@ -1,0 +1,219 @@
+html {
+    scroll-behavior: smooth;
+}
+.in{
+    text-align: center;
+    animation: aparecer2 2s ease-out forwards ;
+}
+.da{
+    width: fit-content;
+    margin: 0 auto;
+    animation: aparecer2 2s ease-out forwards;
+}
+
+.wo{
+    width: 200px; height: 180px;
+
+
+}
+.tit{
+ color:black; -webkit-text-stroke: 0.2px black;
+text-align: center; 
+font-size: 40px;
+animation: aparecer 2s ease-out forwards;
+font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+   /*background-image: url("../img/bl.jpeg");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(254, 254, 254);
+    background-image: linear-gradient(400deg, skyblue 0%, rgb(9, 182, 225) 30%, white 50% );
+    min-height: 100vh;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../Fuentes/Roboto-Italic-VariableFont_wdth,wght.ttf") format('truetype')
+}
+@keyframes aparecer {
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes aparecer2{
+    from{
+       opacity: 0;
+       transform: translateZ(20px) ;
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0); 
+    }
+}
+    
+
+
+input[type="radio"]{
+    display: none;
+}
+
+.section{
+    display: none;
+    padding: 40px 20px;
+}
+#inic:checked ~ .secciones #inicio{
+    display: block;
+}
+#hist:checked ~ .secciones #historia{
+    display: block;
+}
+#cul:checked ~ .secciones #cultura{
+    display: block;
+}
+#len:checked ~ .secciones #lenguas{
+    display: block;
+}
+#gas:checked ~ .secciones #gastronomia{
+    display: block;
+}
+
+.menu label{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 10px;
+    color: rgb(8, 7, 7);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    animation: aparecer 2s ease-out forwards;
+}
+.menu{
+   background-image: url("../img/a.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-color: deepskyblue;
+    border-style: double;
+    background:linear-gradient(400deg, rgb(8, 127, 224) 0%, deepskyblue 20%, skyblue 30%, rgb(162, 222, 246) 30%, white) ;
+    animation: aparecer2 2s ease-out forwards;
+}
+.menu label:hover{ 
+ background-color: rgb(225, 225, 225, 0.5);
+}
+#inic:checked ~.enc .menu label [for="inic"],
+#hist:checked ~.enc .menu label[for="hist"],
+#len:checked ~.enc .menu label[for="len"],
+#gas:checked ~.enc .menu label[for="gas"],
+
+.tarj{
+
+    background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width:2000px ;
+    box-shadow: 0px 5px rgb(0, 0, 0, 0.1);
+    height: 4px;
+}
+.wao{
+    text-align: center;
+    font-size: 22px;
+    animation: aparecer2 2s, ease-out forwards;
+}
+.tit2{
+    text-align: center;
+    animation: aparecer 2s, ease-out forwards;
+    font-size: 25px;
+}
+
+.list{
+    font-size: 20px;
+    animation: aparecer2 2.5s, ease-out forwards;
+}
+.logo{
+    animation: aparecer2 2.5s, ease-out forwards;
+}
+
+
+ .wao2{
+    font-size: 22px;
+    text-align: left;
+    animation: aparecer2 2s, ease-out forwards;
+ }
+ .tot{
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 5px;
+ }
+.tott{
+     border-color: aliceblue;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 400px;
+    height: 180px;
+    align-items: center;
+}
+.brillo{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    padding: 12px 25px;
+}
+.brillo h2:hover{
+     background-color: rgb(16, 143, 255);
+     transform: translateY(-2px);
+     box-shadow: 0 0 15px #007bff, 0 0 30px #007bff;
+}
+.tit3{
+    font-size: 27px;
+    animation: aparecer2 2s, ease-out forwards;
+}
+.tit4{
+    font-size: 23px;
+    animation: aparecer2 2s, ease-out forwards;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px){
+
+    .tit{
+        font-size: 22px;
+    }
+    .wao2, .wao, .list{
+         text-align: left;
+         animation: aparecer2 2s, ease-out forwards;
+         font-size: 18px;
+    }
+    .in{
+        font-size: 19px ;
+    }
+    .xd{
+        font-size: 16px ;
+    }
+    .wo{
+             width: 170px; height: 160px;
+    }
+    .tit2{
+        font-size: 20px ;
+    }
+
+}
